@@ -14,4 +14,5 @@ A smart greenhouse project for our IOT course. Made by Sigourney, Samantha and A
 # Thingsboard Mockup
 
 # Architecture Diagram
-<img width="1746" height="775" alt="image" src="https://github.com/user-attachments/assets/599ace39-bddf-42ab-a48f-0eb89757d553" />
+<img width="1727" height="765" alt="image" src="https://github.com/user-attachments/assets/838ec8af-7b11-47da-8d89-8d16443c4a34" />
+
