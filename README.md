@@ -2,10 +2,10 @@
 A smart greenhouse project for our IOT course.
 
 # Inventory 
-## Raspberry Pi
+### Raspberry Pi
 - Soil Moisture Sensor
 - Water Pump
 - fan
 - LED grow lights
-## Arduino MKR
+### Arduino MKR
 - ENV shield
