@@ -28,18 +28,24 @@ try:
         print(f"ERROR: Could not claim GPIO pin {B} → {e}")
         sys.exit(1)
 
-    # --- Motor forward ---
-    print("Motor forward")
+    # --- Ensure pump is OFF at start ---
+    print("Pump OFF at start")
+    lgpio.gpio_write(chip, A, 0)
+    lgpio.gpio_write(chip, B, 0)
+    time.sleep(1)
+
+    # --- Motor ON (reversed direction) ---
+    print("Pump ON (reversed direction)")
     try:
-        lgpio.gpio_write(chip, A, 1)
-        lgpio.gpio_write(chip, B, 0)
+        lgpio.gpio_write(chip, A, 0)   # reversed
+        lgpio.gpio_write(chip, B, 1)
     except Exception as e:
-        print(f"ERROR: Could not write motor forward state → {e}")
+        print(f"ERROR: Could not write motor state → {e}")
 
     time.sleep(3)
 
     # --- Stop motor ---
-    print("Stop")
+    print("Stopping pump")
     try:
         lgpio.gpio_write(chip, A, 0)
         lgpio.gpio_write(chip, B, 0)
@@ -49,19 +55,14 @@ try:
 except KeyboardInterrupt:
     print("\nStopped by user (CTRL+C).")
 
-except Exception as e:
-    print(f"Unexpected error: {e}")
-
 finally:
     # --- Safe shutdown ---
     if chip is not None:
         try:
-            # Ensure motor is off before exiting
             lgpio.gpio_write(chip, A, 0)
             lgpio.gpio_write(chip, B, 0)
         except:
-            pass  # worst case, ignore
-
+            pass
         try:
             lgpio.gpiochip_close(chip)
             print("GPIO cleaned up safely.")
