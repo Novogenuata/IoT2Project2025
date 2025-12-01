@@ -25,6 +25,6 @@ A smart greenhouse project for our IOT course. Made by Sigourney, Samantha and A
 # How to use
 
 # Screenshots
-<img width="1613" height="784" alt="image" src="https://github.com/user-attachments/assets/1fe2d057-69ad-49e1-8eea-abb34686514f" />
+<img width="1653" height="846" alt="image" src="https://github.com/user-attachments/assets/3a576c40-5989-49e9-b7fe-4200d07bdc14" />
 
 
