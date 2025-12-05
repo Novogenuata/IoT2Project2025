@@ -8,6 +8,8 @@ A smart greenhouse project for our IOT course. Made by Sigourney, Samantha and A
 - Fan
 - LED grow lights
 - MCP3008
+- Relay
+- CM chip
 ### Arduino MKR
 - ENV shield
 
@@ -16,10 +18,13 @@ A smart greenhouse project for our IOT course. Made by Sigourney, Samantha and A
 
 
 # Architecture Diagram
-<img width="1727" height="765" alt="image" src="https://github.com/user-attachments/assets/838ec8af-7b11-47da-8d89-8d16443c4a34" />
+<img width="1634" height="750" alt="image" src="https://github.com/user-attachments/assets/907580b3-3a46-4905-910a-1432b1f26b9f" />
 
 # Features
 
 # How to use
 
 # Screenshots
+<img width="1653" height="846" alt="image" src="https://github.com/user-attachments/assets/3a576c40-5989-49e9-b7fe-4200d07bdc14" />
+
+
