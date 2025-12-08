@@ -20,10 +20,6 @@ A smart greenhouse project for our IOT course. Made by Sigourney, Samantha and A
 # Architecture Diagram
 <img width="1634" height="750" alt="image" src="https://github.com/user-attachments/assets/907580b3-3a46-4905-910a-1432b1f26b9f" />
 
-# Features
-
-# How to use
-
 
 # French Dashboard
 <img width="1535" height="701" alt="image" src="https://github.com/user-attachments/assets/81ce20d8-1a68-49b6-8ec7-d84693292d0b" />
